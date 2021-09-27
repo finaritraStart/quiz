@@ -1,0 +1,25 @@
+#qid {
+  padding: 10px 15px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 20px;
+}
+label .glyphicon {
+    top: 34%
+}
+
+.modal-header {
+    background-color: transparent;
+    color: inherit
+}
+
+.modal-body {
+    min-height: 205px
+}
+#loadbar {
+    position: absolute;
+    width: 62px;
+    height: 77px;
+    top: 2em
+}
+

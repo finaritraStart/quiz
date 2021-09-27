@@ -1,0 +1,34 @@
+.card{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ box-shadow: 8px 8px 12px #aaa;
+}
+
+.card-header{
+  background-color: #212121;
+}
+
+.rep{
+  width: 200px;
+  height: 40px;
+  margin: 1.5rem 0;
+  margin-right: auto;
+  margin-left: auto;  
+  display: block;
+ box-shadow: 8px 8px 12px #aaa;         
+}
+.button{
+  width: 50%;
+}
+#rad {
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+

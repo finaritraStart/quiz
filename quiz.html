@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/transitional.dtd">
+<html lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="Site d'aide aux surfeurs débutants sur internet">
+<meta name="keywords" content="Internet, usages, éducation, pédagogie, information, communication, pratiques, ressources, ministère, french, multimédia, grand public, technique, informatique, logiciels, recherche, aide, conseils, debutant, arnaques, pc, , sch&eacute;mas, schemas, &eacute;lectricite, electricite,  problemes, jeux, garderie, enfants, b&eacute;b&eacute;s, bebes, portables, questions, programmes">
+
+<title>Quiz Culture générale Jeu</title>		
+<link rel="stylesheet" href="formul.css" type="text/css">
+
+<script src="quiz.js" type="text/javascript"></script>
+		
+</head>	
+<body onLoad="init()">
+	
+	<embed src="sons/s13.au" autostart="false" autoplay="false" width="0" height="0" name="sound1"
+	enablejavascript="true"></embed>
+	<embed src="sons/s20.au" autostart="false" autoplay="false" width="0" height="0" name="sound2"
+	enablejavascript="true"></embed>
+	
+	<form method="post">
+		<div id="contf" align="center">
+			<table border="4" width="460px">
+				<tr>
+				  <td align="center" colspan="3" bgcolor="blue"><font size="24px" valign="middle" color="#FFFFFF">Eden Quiz </font></td>
+				</tr>
+				<tr>
+				  <td bgcolor="#B9FBFD" align="right"><b>Question:</b></td>
+				  <td colspan="2" bgcolor="#B9FBFD" align="center"><textarea cols="80" rows="2" name="question"></textarea></td>
+				</tr>
+				<tr>
+				  <td align="center" bgcolor="#F2C986"><input type="text" name="tda" size="12" value=""></td>
+				  <td bgcolor="#B9FBFD" align="left" width="350"><input type="text" name="choiceA" size="70"></td>
+				  <td bgcolor="#B9FBFD" align="center" width="40px"><input type=button name="choixa" class="bout3" value="A" onClick="repa(this.form);testrep(this.form);"></td>
+				</tr>
+				<tr>
+				  <td align="center" bgcolor="#F2C986"><input type="text" name="tdb" size="12" value=""></td>
+				  <td bgcolor="#B9FBFD" align="left"><input type="text" name="choiceB" size="70"></td>
+				  <td bgcolor="#B9FBFD" align="center"><input type=button name="choixb" class="bout3" value="B" onClick="repb(this.form);testrep(this.form);"></td>
+				</tr>
+				<tr>
+				  <td align="center" bgcolor="#F2C986"><input type="text" name="tdc" size="12" value=""></td>
+				  <td bgcolor="#B9FBFD" align="left"><input type="text" name="choiceC" size="70"></td>
+				  <td bgcolor="#B9FBFD" align="center"><input type=button name="choixc" class="bout3" value="C" onClick="repc(this.form);testrep(this.form);"></td>
+				</tr>
+				<tr>
+				  <td align="center" bgcolor="#F2C986"><input type="text" name="tdd" size="12" value=""></td>
+				  <td bgcolor="#B9FBFD" align="left"><input type="text" name="choiceD" size="70"></td>
+				  <td bgcolor="#B9FBFD" align="center"><input type=button name="choixd" class="bout3" value="D" onClick="repd(this.form);testrep(this.form);"></td>
+				</tr>
+				<tr>
+				  <td colspan="3" bgcolor="#B9FBFD" align="left"><input type="hidden" name="yourChoice" size="4"></td>
+				</tr>
+				<tr>
+				  <td bgcolor="#B9FBFD" align="center"><input type="button" class="bout" value="Nouveau Jeu" onclick="clearForm(this.form);init(this.form);"></td>
+				  <td colspan="2" bgcolor="#B9FBFD" align="center"><input type="button" align="center" class="bout2" value="Question Suivante" onclick="clearRep(this.form);nextQuestion(this.form);"></td>
+				  </td>
+				</tr>
+				<tr>
+				  <td bgcolor="#F2C986" align="right"><b>Resultats:</b></td>
+				  <td colspan="2" bgcolor="#B9FBFD" align="center" background="lightyellow"><p><textarea COLS="80" ROWS="3" name="results"></textarea></td>
+				</tr>
+				<tr>
+				  <td bgcolor="yellow" align="right"><b>Score:</b></td>
+				  <td colspan="2" bgcolor="yellow"><b>&nbsp;&nbsp;Points:&nbsp;</b><input type="text" name="myScore" size="4">&nbsp;&nbsp;<b>sur&nbsp;&nbsp;</b><input type="text" name="questNo" size="4"><b>&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;</b>
+				  <input type="text" name="percent" size="6"><b>&nbsp;%</td>
+				</tr>
+			</table>
+		</div>
+		<div id="comment">
+			<table border="4" width="90px">
+				<tr>
+					<td align="center" bgcolor="#F2C986"><input type="text" name="cmt" size="14" value=""></td>
+				</tr>
+			</table>
+		</div>
+	</form>
+	<div id="explic">
+		<table class="tabpers">
+			<tr border="1px solid #808080">
+				<td height="1" align="center">
+					<marquee scrollamount="2" width="290px" height="250px" align="left" behavior="scroll" direction="Up" onMouseOver="this.stop();" onMouseOut="this.start();">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.progvbjlr.net" target="_blank"><img src="siglejlr.gif" title="Lien vers le site JLR"></a></span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="textevq">pr&eacute;sente</span><br><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="titreq">Quiz Eden</span><br><br>
+						&nbsp;<img src="rd_tri.gif" alt="sigle">&nbsp;<span class="texteq">Un quiz pour tester votre culture g&eacute;n&eacute;rale.<br><br>
+						&nbsp;<img src="rd_tri.gif" alt="sigle">&nbsp;&nbsp;Le jeu comporte 20 questions choisies de <br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fa&ccedil;on al&eacute;atoire parmi 60 questions <br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;possibles.<br><br>
+						&nbsp;<img src="rd_tri.gif" alt="sigle">&nbsp;&nbsp;A chaque question&#44; choisissez votre<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;r&eacute;ponse avec un clic sur A&#44; B&#44; C ou D.<br><br>
+						&nbsp;<img src="rd_tri.gif" alt="sigle">&nbsp;&nbsp;Votre r&eacute;sultat&#44 score et pourcentage<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s&acute;affichent en-dessous. Ensuite un clic sur<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;le bouton &#34;Question suivante&#34;.<br><br>
+						&nbsp;<img src="rd_tri.gif" alt="sigle">&nbsp;&nbsp;A la fin du quiz vous pouvez rejouer<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;avec un clic sur le bouton &#34;Nouveau jeu&#34; <br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;avec 20 nouvelles questions<br><br><br></span>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="textevq">Bon amusement !</span>
+						<br><br>
+					</marqee>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div id="laureat">
+		<span><img name="cote" src="sc5.gif" alt="laureat"></span>
+	</div>
+	<div id="contboutexit" align="center">
+		<span><img src="exit.gif" onclick="self.close();" onmousedown="this.src='exitp.gif'" onmouseout="this.src='exit.gif'"></span>
+	</div>
+</body>
+
+</html>	
